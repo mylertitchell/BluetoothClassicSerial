@@ -41,24 +41,24 @@ Replace the text 'first.device.protocol.string' with the protocol string for the
 
 ```xml
 <platform name="ios">
-    <config-file target="*-Info.plist" parent="UISupportedExternalAccessoryProtocols">
+    <custom-config-file target="*-Info.plist" parent="UISupportedExternalAccessoryProtocols">
         <array>
             <string>first.device.protocol.string</string>
             <string>second.device.protocol.string</string>
          </array>
-    </config-file>
+    </custom-config-file>
 </platform>
 ```
 
 #### Phonegap Build config.xml entry for Supported Accessories
 
 ```xml
-<config-file platform="ios" parent="UISupportedExternalAccessoryProtocols">
+<custom-config-file platform="ios" parent="UISupportedExternalAccessoryProtocols">
     <array>
         <string>first.device.protocol.string</string>
          <string>second.device.protocol.string</string>
     </array>
-</config-file>
+</custom-config-file>
 ```
 
 # Examples

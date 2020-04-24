@@ -16,36 +16,36 @@
         <clobbers target="window.bluetoothClassicSerial" />
     </js-module>
 
-    <dependency id="cordova-custom-config" version="2.0.3" />
+    <dependency id="cordova-custom-config" version="5.1.0" />
 
     <platform name="android">
 
-        <config-file target="res/xml/config.xml" parent="/widget">
+        <custom-config-file target="res/xml/config.xml" parent="/widget">
             <feature name="BluetoothClassicSerial">
                 <param name="android-package" value="nz.co.soltius.cordova.BluetoothClassicSerial"/>
             </feature>
-        </config-file>
+        </custom-config-file>
 
         <source-file src="src/android/nz/co/soltius/cordova/BluetoothClassicSerial.java"
             target-dir="src/nz/co/soltius/cordova"/>
         <source-file src="src/android/nz/co/soltius/cordova/BluetoothClassicSerialService.java"
             target-dir="src/nz/co/soltius/cordova"/>
 
-        <config-file target="AndroidManifest.xml" parent="/manifest">
+        <custom-config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.BLUETOOTH" />
             <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
             <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-        </config-file>
+        </custom-config-file>
 
     </platform>
 
     <platform name="ios">
 
-        <config-file target="config.xml" parent="/widget">
+        <custom-config-file target="config.xml" parent="/widget">
             <feature name="BluetoothClassicSerial">
                 <param name="ios-package" value="BluetoothClassicSerial" onload="true"/>
             </feature>
-        </config-file>
+        </custom-config-file>
 
         <header-file src="src/ios/BluetoothClassicSerial.h" target-dir="BluetoothClassicSerial" />
         <source-file src="src/ios/BluetoothClassicSerial.m" target-dir="BluetoothClassicSerial" />

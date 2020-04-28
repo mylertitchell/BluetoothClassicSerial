@@ -1,6 +1,6 @@
 {
-  "name": "cordova-plugin-bluetoothClassic-serial",
-  "version": "0.9.9",
+  "name": "cordova-plugin-bluetoothclassic-serial",
+  "version": "1.0.0",
   "description": "Bluetooth Serial Communication Plugin",
   "cordova": {
     "id": "cordova-plugin-bluetoothClassic-serial",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/soltius/BluetoothClassicSerial.git"
+    "url": "git+https://github.com/mylertitchell/BluetoothClassicSerial.git"
   },
   "keywords": [
     "cordova",
@@ -20,10 +20,10 @@
     "arduino",
     "ecosystem:cordova"
   ],
-  "author": "Soltius New Zealand <steve.campbell@soltius.co.nz>",
+  "author": "Tyler Mitchell <tyler_mitchell@hotmail.co.uk>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/soltius/BluetoothClassicSerial/issues"
+    "url": "https://github.com/mylertitchell/BluetoothClassicSerial/issues"
   },
-  "homepage": "https://github.com/soltius/BluetoothClassicSerial#readme"
+  "homepage": "https://github.com/mylertitchell/BluetoothClassicSerial#readme"
 }

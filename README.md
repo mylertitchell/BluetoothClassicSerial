@@ -23,9 +23,9 @@ This plugin enables serial communication over Bluetooth. It is a fork of https:/
 
 Install with Cordova cli
 
-    $ cordova plugin add cordova-plugin-bluetoothClassic-serial
+    $ cordova plugin add cordova-plugin-bluetoothclassic-serial
 
-Note that this plugin's id changed from 'cordova-plugin-bluetooth-serial' to 'cordova-plugin-bluetoothClassic-serial' as part of the fork.
+Note that this plugin's id changed from 'cordova-plugin-bluetooth-serial' to 'cordova-plugin-bluetoothclassic-serial' as part of the fork.
 
 ## iOS Notes
 

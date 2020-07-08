@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Bluetooth Serial Communication Plugin",
   "cordova": {
-    "id": "cordova-plugin-bluetoothClassic-serial",
+    "id": "cordova-plugin-bluetoothclassic-serial",
     "platforms": [
       "android",
       "ios"

@@ -1,9 +1,6 @@
 # Bluetooth Classic Serial Plugin for Cordova
 
-This plugin enables serial communication over Bluetooth. It is a fork of https://github.com/don/BluetoothSerial.  The core difference is that https://github.com/don/BluetoothSerial supports Bluetooth Low Energy on iOS.  This plugin is written using the iOS Accessory Framework (MFi) to support Classic Bluetooth on iOS.  Windows Phone 8 Support has been removed in the fork.
-
-* **Beta Release**
-* **Breaking API Changes from version 0.9.5 'MultiInterface'**
+This plugin enables serial communication over Bluetooth. It is a fork of https://github.com/soltius/BluetoothClassicSerial.  The core difference is that this plugin has updated the custom configuration dependencies to handle the latest cordova-android and cordova-ios breaking changes.
 
 ## Supported Platforms
 

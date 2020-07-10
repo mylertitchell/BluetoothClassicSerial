@@ -2,8 +2,8 @@
 <plugin
     xmlns="http://www.phonegap.com/ns/plugins/1.0"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    id="cordova-plugin-bluetoothClassic-serial"
-    version="1.0.1">
+    id="cordova-plugin-bluetoothclassic-serial"
+    version="1.0.2">
 
     <name>Bluetooth Classic Serial</name>
     <description>Bluetooth Serial Communication Plugin</description>
@@ -16,36 +16,34 @@
         <clobbers target="window.bluetoothClassicSerial" />
     </js-module>
 
-    <dependency id="cordova-custom-config" version="5.1.0" />
-
     <platform name="android">
 
-        <custom-config-file target="res/xml/config.xml" parent="/widget">
+        <config-file target="res/xml/config.xml" parent="/widget">
             <feature name="BluetoothClassicSerial">
                 <param name="android-package" value="nz.co.soltius.cordova.BluetoothClassicSerial"/>
             </feature>
-        </custom-config-file>
+        </config-file>
 
         <source-file src="src/android/nz/co/soltius/cordova/BluetoothClassicSerial.java"
             target-dir="src/nz/co/soltius/cordova"/>
         <source-file src="src/android/nz/co/soltius/cordova/BluetoothClassicSerialService.java"
             target-dir="src/nz/co/soltius/cordova"/>
 
-        <custom-config-file target="AndroidManifest.xml" parent="/manifest">
+        <config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.BLUETOOTH" />
             <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
             <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-        </custom-config-file>
+        </config-file>
 
     </platform>
 
     <platform name="ios">
 
-        <custom-config-file target="config.xml" parent="/widget">
+        <config-file target="config.xml" parent="/widget">
             <feature name="BluetoothClassicSerial">
                 <param name="ios-package" value="BluetoothClassicSerial" onload="true"/>
             </feature>
-        </custom-config-file>
+        </config-file>
 
         <header-file src="src/ios/BluetoothClassicSerial.h" target-dir="BluetoothClassicSerial" />
         <source-file src="src/ios/BluetoothClassicSerial.m" target-dir="BluetoothClassicSerial" />

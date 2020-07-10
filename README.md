@@ -1,6 +1,6 @@
 # Bluetooth Classic Serial Plugin for Cordova
 
-This plugin enables serial communication over Bluetooth. It is a fork of https://github.com/soltius/BluetoothClassicSerial.  The core difference is that this plugin has updated the custom configuration dependencies to handle the latest cordova-android and cordova-ios breaking changes.
+This plugin enables serial communication over Bluetooth. It is a fork of https://github.com/soltius/BluetoothClassicSerial.  The core difference is that this plugin has updated the configuration dependencies to handle the latest cordova-android and cordova-ios breaking changes.
 
 ## Supported Platforms
 
@@ -38,24 +38,24 @@ Replace the text 'first.device.protocol.string' with the protocol string for the
 
 ```xml
 <platform name="ios">
-    <custom-config-file target="*-Info.plist" parent="UISupportedExternalAccessoryProtocols">
+    <config-file target="*-Info.plist" parent="UISupportedExternalAccessoryProtocols">
         <array>
             <string>first.device.protocol.string</string>
             <string>second.device.protocol.string</string>
          </array>
-    </custom-config-file>
+    </config-file>
 </platform>
 ```
 
 #### Phonegap Build config.xml entry for Supported Accessories
 
 ```xml
-<custom-config-file platform="ios" parent="UISupportedExternalAccessoryProtocols">
+<config-file platform="ios" parent="UISupportedExternalAccessoryProtocols">
     <array>
         <string>first.device.protocol.string</string>
          <string>second.device.protocol.string</string>
     </array>
-</custom-config-file>
+</config-file>
 ```
 
 # Examples
